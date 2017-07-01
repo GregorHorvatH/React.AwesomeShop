@@ -1,0 +1,58 @@
+@background-color: rgba(255, 255, 255, 0.5);
+@selected-color: rgba(227, 227, 247, 0.5);
+
+.list-group-item {
+  background-color: @background-color;
+
+  &:hover {
+    background-color: @selected-color;
+  }
+
+  &.selected {
+    background-color: @selected-color;
+    font-weight: bold;
+    border: none;
+  }
+}
+
+.product-item {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.product-search-container {
+  .product-search {
+    &-button {
+      margin-left: -40px;
+    }
+
+    &-input {
+      width: 100%;
+    }
+
+    &-form-group {
+      padding-right: 42px;
+    }
+
+    &-input-clear {
+      position: absolute;
+      right: 6px;
+      bottom: 8px;
+      cursor: default;
+      z-index: 5;
+      color: #999999;
+      display: none;
+    }
+  }
+
+  &:hover {
+    .product-search {
+      &-input {
+        padding-right: 20px;
+      }
+
+      &-input-clear {
+        display: block;
+      }
+    }
+  }
+}

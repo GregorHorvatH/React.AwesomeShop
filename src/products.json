@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "category": 2,
+    "title": "First Product",
+    "price": 24.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/fashion_01.jpg",
+    "stars": 3,
+    "reviews": 12
+  },
+  {
+    "id": "2",
+    "category": 1,
+    "title": "Second Product",
+    "price": 74.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/sport_02.jpg",
+    "stars": 4,
+    "reviews": 8
+  },
+  {
+    "id": "3",
+    "category": 4,
+    "title": "Third Product",
+    "price": 64.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/transport_01.jpg",
+    "stars": 5,
+    "reviews": 15
+  },
+  {
+    "id": "4",
+    "category": 2,
+    "title": "Fourth Product",
+    "price": 84.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/fashion_02.jpg",
+    "stars": 2,
+    "reviews": 21
+  },
+  {
+    "id": "5",
+    "category": 3,
+    "title": "Fifth Product",
+    "price": 94.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/technics_01.jpg",
+    "stars": 1,
+    "reviews": 9
+  },
+  {
+    "id": "6",
+    "category": 3,
+    "title": "Awesome notebook",
+    "price": 294.99,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A et fugiat nam quod rerum vel.",
+    "details": "Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada.",
+    "image": "/images/technics_02.jpg",
+    "stars": 4,
+    "reviews": 95
+  }
+]

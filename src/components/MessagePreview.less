@@ -1,0 +1,16 @@
+@import "../styles/palette.less";
+
+.message-preview {
+  border: 1px black dotted;
+
+  &:hover {
+    background-color: darken(@background-color, 10%);
+  }
+
+  &.selected {
+    background-color: darken(@background-color, 10%);
+    .header {
+      font-weight: bold;
+    }
+  }
+}

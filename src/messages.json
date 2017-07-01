@@ -1,0 +1,37 @@
+[
+	{
+		"id": "5fgnfsg",
+		"subject": "Hi there! How are you?",
+		"senderName": "Mark",
+		"senderEmail": "mark@domain.com",
+		"body": "Normally you would define a React component as a plain JavaScript class"
+	},
+	{
+		"id": "awtysert",
+		"subject": "See you later!",
+		"senderName": "Peter",
+		"senderEmail": "mark@domain.com",
+		"body": "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation."
+	},
+	{
+		"id": "456dgdg",
+		"subject": "Good job!",
+		"senderName": "Max",
+		"senderEmail": "mark@domain.com",
+		"body": "This isn't really a React-specific tip,"
+	},
+	{
+		"id": "dfhds5464",
+		"subject": "Meeteng tomorrow?",
+		"senderName": "Paul",
+		"senderEmail": "mark@domain.com",
+		"body": "The two approaches are not interchangeable. You should initialize state in the constructor when using ES6 classes"
+	},
+	{
+		"id": "345rtgdgdg",
+		"subject": "How are you doing?",
+		"senderName": "Robert",
+		"senderEmail": "mark@domain.com",
+		"body": "Это пример сильно связанных данных и представления, делать так не рекомендуеся"
+	}
+]
