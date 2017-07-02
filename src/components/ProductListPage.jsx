@@ -21,7 +21,7 @@ class ProductListPage extends React.Component {
     }
 
     handleProductClick(productId) {
-        this.context.router.push(`/products/product/${productId}`);
+        this.context.router.push(`/products/${productId}`);
     }
 
     handleCategoryClick(index) {

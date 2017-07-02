@@ -7,3 +7,21 @@
   margin-right: 10px;
   outline: none;
 }
+
+.product-item {
+  .close-product-page {
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    right: 10px;
+    top: 10px;
+    color: #999999;
+    display: none;
+  }
+
+  &:hover {
+    .close-product-page {
+      display: block;
+    }
+  }
+}

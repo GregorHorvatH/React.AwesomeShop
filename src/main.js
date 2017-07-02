@@ -10,6 +10,7 @@ import ProductListPage from "./components/ProductListPage.jsx";
 import ProductPage from "./components/ProductPage.jsx";
 
 import CartPage from "./components/CartPage.jsx";
+import ContactPage from "./components/ContactPage.jsx";
 
 import InboxPage from "./components/InboxPage.jsx";
 import Message from "./components/Message.jsx";
@@ -21,12 +22,13 @@ ReactDOM.render(
             <IndexRoute component={HomePage} />
 			<Route path='/about' component={AboutPage}/>
 			<Route path='/products' component={ProductListPage}>
-                <Route path='/products/product/:productId' component={ProductPage}/>
+                <Route path='/products/:productId' component={ProductPage}/>
             </Route>
 			<Route path='/inbox' component={InboxPage}>
 				<Route path='/inbox/messages/:messageId' component={Message}/>
 			</Route>
             <Route path='/cart' component={CartPage}/>
+            <Route path='/contact' component={ContactPage}/>
 		</Route>
         <Route path='*' component={NotFound} />
 	</Router>,

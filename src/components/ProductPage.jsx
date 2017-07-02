@@ -35,12 +35,13 @@ class ProductPage extends React.Component {
     }
 
     handleCartClick() {
-        console.log('productId:', this.props.params.productId);
-        console.log('product:', this.state.product);
         ReactDOM.render(
-            <ProductAlert message="Your product successfully inserted into the cart."/>,
+            <ProductAlert message="Your product successfully inserted into the cart." key="alert_1"/>,
             document.querySelector(".product-alert-wrapper")
         );
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        cart[this.props.params.productId] = cart[this.props.params.productId] ? cart[this.props.params.productId] + 1 : 1;
+        localStorage.setItem("cart", JSON.stringify(cart));
     }
 
     render() {
@@ -51,6 +52,8 @@ class ProductPage extends React.Component {
 
         return (
             <div className="thumbnail product-item">
+                <span className="close-product-page"
+                      onClick={this.handleCloseProductLick}>X</span>
                 <img className="img-responsive" src={this.state.product.image} alt=""/>
                 <div className="caption-full">
                     <h4 className="pull-right">${this.state.product.price}</h4>

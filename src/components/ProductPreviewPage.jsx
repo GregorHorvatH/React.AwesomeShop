@@ -9,8 +9,6 @@ class ProductPreviewPage extends React.Component {
 
     componentDidMount() {
         const grid = document.querySelector(".grid");
-        console.log('grid', grid);
-
         this.msnry = new Masonry( grid, {
             itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
             columnWidth: '.grid-sizer',

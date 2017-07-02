@@ -39,6 +39,9 @@ class NavBar extends React.Component {
                                     </span> Cart <span className="badge">14</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
