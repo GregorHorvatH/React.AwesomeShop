@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import {hashHistory} from "react-router";
 
 import products from "../products.json";
-import StarRow from "./StarRow.jsx";
 import ProductAlert from "./ProductAlert.jsx";
 
 import "./ProductPage.less";
@@ -14,7 +13,8 @@ class ProductPage extends React.Component {
 
         this.state = {
             products: products,
-            product: products.find(product => product.id === this.props.params.productId)
+            product: products.find(product => product.id === this.props.params.productId),
+            productAlert: ''
         };
 
         this.handleCartClick = this.handleCartClick.bind(this);
@@ -34,11 +34,18 @@ class ProductPage extends React.Component {
         hashHistory.push(`/products`);
     }
 
+    handleAlertClick() {
+        this.setState({
+            productAlert: ''
+        });
+    }
+
     handleCartClick() {
-        ReactDOM.render(
-            <ProductAlert message="Your product successfully inserted into the cart." key="alert_1"/>,
-            document.querySelector(".product-alert-wrapper")
-        );
+        this.setState({
+            productAlert: <ProductAlert message="Your product successfully inserted into the cart."
+                                        onClick={this.handleAlertClick.bind(this)}/>
+        });
+
         let cart = JSON.parse(localStorage.getItem("cart")) || {};
         cart[this.props.params.productId] = cart[this.props.params.productId] ? cart[this.props.params.productId] + 1 : 1;
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -47,7 +54,8 @@ class ProductPage extends React.Component {
     render() {
         let starRows = [];
         for (let i = 0; i < 5; i++) {
-            starRows.push(<StarRow key={'s' + i} empty={i + 1 > this.state.product.stars}/>);
+            const classNames = "glyphicon " + (i + 1 > this.state.product.stars ? "glyphicon-star-empty" : "glyphicon-star");
+            starRows.push(<span className={classNames} key={'star_' + i}></span>);
         }
 
         return (
@@ -61,7 +69,7 @@ class ProductPage extends React.Component {
                     <p>{this.state.product.description}</p>
                     <p>{this.state.product.details}</p>
                 </div>
-                <div className="product-alert-wrapper"></div>
+                <div className="product-alert-wrapper">{this.state.productAlert}</div>
                 <div className="product-controls">
                     <button type="button"
                             className="btn cart-button"

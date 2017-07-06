@@ -1,5 +1,4 @@
 import React from "react";
-import StarRow from "./StarRow.jsx";
 import Masonry from "masonry-layout";
 
 class ProductPreviewPage extends React.Component {
@@ -21,7 +20,8 @@ class ProductPreviewPage extends React.Component {
 
         let starRows = [];
         for (let i = 0; i < 5; i++) {
-            starRows.push(<StarRow key={'s' + i} empty={i + 1 > stars}/>);
+            const classNames = "glyphicon " + (i + 1 > stars ? "glyphicon-star-empty" : "glyphicon-star");
+            starRows.push(<span className={classNames} key={'star_' + i}></span>);
         }
 
         return(
